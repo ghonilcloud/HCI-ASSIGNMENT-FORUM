@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Security Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index2.html">Home page</a>
+        <a href="index3.html">Check balance</a>
+        <a href="index4.html">Transfers</a>
+        <a class="active" href="index5.html">Transaction transcripts</a>
+        <a href="index.html">Logout</a>
+    </div>
+    <h1 class="h1center">Kuesus Prime Banking</h1>
+    <h1 class="h1center">Balance Checking</h1>
+    <br><br><br><br>
+        <fieldset class="fieldset2">
+            <legend>Account Details:</legend>
+            <label for="bnumber">Bank Number: </label>
+            <input type="text" id="bnumber" name="bnumber"><br><br>
+            <label for="region">Bank Region: Senayan</label>
+            <select id="region" name="region">
+                <option value="">Select</option>
+                <option value="senayan">Senayan</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bandung">Bandung</option>
+                <option value="semarang">Semarang</option>
+              </select><br><br>
+            <label for="pin">Input PIN Code:</label>
+            <input type="text" id="pin" name="pin"><br><br>
+            <a><button class="button2" onclick="ShowAndHide()"><span>Show transcripts </span></button></a>
+            <div id="SectionName" style="display:none">
+                <hr>
+                <table class="table1">
+                    <tr>
+                        <th class="th2">Date</th>
+                        <th class="th2">Recipient</th>
+                        <th class="th2">Amount</th>
+                        <th class="th2">Notes</th>
+                    </tr>
+                    <tr>
+                        <td class="td2">23/10/2023</td>
+                        <td class="td2">01931234412: Ariel Prandi Dharmawidjaja</td>
+                        <td class="td2">Rp 29,999,999.00</td>
+                        <td class="td2">Amazing night</td>
+                    </tr>
+                    <tr>
+                        <td class="td2">15/10/2023</td>
+                        <td class="td2">12292930131: Holland Bakery Store</td>
+                        <td class="td2">Rp 8,240,000.00</td>
+                        <td class="td2">Bought 8912 Kuesus</td>
+                    </tr>
+                    <tr>
+                        <td class="td2">01/10/2023</td>
+                        <td class="td2">22920312391: Pertamina Gas Station</td>
+                        <td class="td2">Rp 450,000.00</td>
+                        <td class="td2">Mahal woi</td>
+                    </tr>
+                    <tr>
+                        <td class="td2">28/09/2023</td>
+                        <td class="td2">20203139391: Ariel Prandi Dharmawidjaja</td>
+                        <td class="td2">Rp 89,999,999,999.00</td>
+                        <td class="td2">Mahar Nikah!! (Tiga rumah, 9 mobil, 1 perahu, 900kg emas)</td>
+                    </tr>
+                </table>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
+<script>
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>

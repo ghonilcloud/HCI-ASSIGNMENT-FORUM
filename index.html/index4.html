@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Security Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index2.html">Home page</a>
+        <a href="index3.html">Check balance</a>
+        <a class="active" href="index4.html">Transfers</a>
+        <a href="index5.html">Transaction transcripts</a>
+        <a href="index.html">Logout</a>
+    </div>
+    <h1 class="h1center">Kuesus Prime Banking</h1>
+    <h1 class="h1center">Transfers</h1>
+    <br><br><br><br>
+    <table>
+    <tr>
+    <td>
+        <fieldset class="fieldset1sec">
+            <legend>Your Account Details:</legend>
+            <label for="bnumber">Bank Number: </label>
+            <input type="text" id="bnumber" name="bnumber"><br><br>
+            <label for="region">Bank Region: </label>
+            <select id="region" name="region">
+                <option value="">Select</option>
+                <option value="senayan">Senayan</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bandung">Bandung</option>
+                <option value="semarang">Semarang</option>
+              </select><br><br>
+            <label for="amount">Input transfer amount:</label>
+            <input type="text" id="amount" name="amount"><br><br>
+        </fieldset>
+    </td>
+        <br>
+    <td>
+        <fieldset class="fieldset1sec">
+            <legend class="legendreceiver">Receiver's Account Details:</legend>
+            <label for="bnumber">Bank Number: </label>
+            <input type="text" id="bnumber" name="bnumber"><br><br>
+            <label for="region">Bank Region:</label>
+            <select id="region" name="region">
+                <option value="select">Select</option>
+                <option value="senayan">Senayan</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="bandung">Bandung</option>
+                <option value="semarang">Semarang</option>
+              </select>
+              <br><br><br><br>
+        </fieldset> 
+    </td>
+    </tr>
+    <td colspan="2">
+        <br><br>
+        <fieldset class="fieldset1sec">
+            <legend class="legendconfirm">Security Confirmation:</legend>
+            <br>
+
+            <label for="secques">When is your birthday?</label>
+            <input type="date" id="secques" name="secques"><br><br>
+            <label for="kuesus">Favourite Kuesus flavour?</label>
+            <input type="text" id="kuesus" name="kuesus"><br><br>
+            <label for="pin">Input PIN Code:</label>
+            <input type="text" id="pin" name="pin"><br><br>
+            <hr>
+            <a href="index6.html"><button class="button2"><span>Submit transfer </span></button></a>
+    </td>
+    </form>
+    </table>
+</body>
+</html>
